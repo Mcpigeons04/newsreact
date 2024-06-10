@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,20 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body {
+  transition: background-color 0.5s ease;
+}
+
+.navbar-light {
+  background-color: white;
+  color: black;
+}
+
+.navbar-dark {
+  background-color: #042743;
+  color: white;
+}
+h1{
+  color:red;
 }
