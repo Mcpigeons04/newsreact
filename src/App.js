@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavBar from './components/NavBar';
 import News from './components/News';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div>
-      <Router basename='/Newspaper'>
+      <Router>
         <NavBar mode={mode} toggleMode={toggleMode} />
         <LoadingBar height={3} color='#f11946' progress={progress} />
         <Routes>
